@@ -6,7 +6,7 @@ const Task = require('./task')
 const userSchema = new mongoose.Schema({
     name: {
         type:String,
-        required:true,  //adding validation
+        required:true,  //adding validation for validation
         trim:true
     },
     email:{
@@ -27,7 +27,7 @@ const userSchema = new mongoose.Schema({
         //customized validation
         validate(value){
             if(value < 0){
-                throw new Error('Age must be a positive number')
+                throw new Error('Age must be a positive number') //ag validator
             }
         }
        

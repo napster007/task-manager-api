@@ -17,7 +17,6 @@ const port = process.env.PORT || 3000
 //         next()
 //     }
 // })
-
 // app.use( (req, res, next)=>{
 //     // console.log(req.method, req.path)
 //     // next()
@@ -28,11 +27,6 @@ const port = process.env.PORT || 3000
 //         next()
 //     }
 // })
-
-
-
-
-
 
 app.use(express.json())
 app.use(userRouter)
@@ -54,13 +48,11 @@ app.listen(port, ()=>{
 // //     const isMatch = await byCrypt.compare('RedStar1121',hashedPassword)
 // //     console.log(isMatch)
 // // }
-
 // const jwt = require('jsonwebtoken')
 // const myFunction = async ()=>{
    
 //     // const token = jwt.sign({_id:'1234'}, 'thisisme', {expiresIn:'1 second'})
 //     // console.log(token)
-
 //     // const data=jwt.verify(token, 'thisisme')
 //     // console.log(data)
 // }
@@ -76,5 +68,3 @@ app.listen(port, ()=>{
 //     console.log(user.tasks)
 // }
 //main()
-
-
